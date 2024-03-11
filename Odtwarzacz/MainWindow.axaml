@@ -1,0 +1,50 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Width="400"
+        Height="600"
+        x:Class="Player.MainWindow"
+        Title="Odtwarzacz">
+        <StackPanel>
+                <Grid>
+                        <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <!--Button Grid.Column="1" Grid.Row="3" Content="Back" Height="50"/>
+                        <Button Grid.Column="2" Grid.Row="3" Content="Play" Height="50"/>
+                        <Button Grid.Column="3" Grid.Row="3" Content="Next" Height="50"/>
+                        
+                        <Slider Grid.Row="2" Grid.ColumnSpan="3" Grid.Column="1" Height="20"/-->
+                        <Image Margin="20" Grid.Column="2" Grid.Row="0" Width="200" Height="280" Stretch="Fill" Source="/Images/eminem.jpeg" Name="obrazek"/>
+                        <TextBlock Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="5" Classes="Headline7"  Width="200" Height="20" Name="title">Tytuł utworu</TextBlock>
+                        <TextBlock Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="5" Classes="Headline6" Width="200" Height="20" Name="author">Autor utworu</TextBlock>
+                        <Slider Name="Slider1" IsSnapToTickEnabled="True" TickPlacement="Outside" Classes="Discrete Accent" Grid.Column="0" Grid.ColumnSpan="5" Grid.Row="3" Margin="15 15" Value="38" TickFrequency="1" ValueChanged="Slider1_OnValueChanged"/>
+                        <Slider Name="Volume" IsSnapToTickEnabled="True" TickPlacement="Outside" Classes="Discrete Accent" Grid.Column="0" Grid.RowSpan="5" Grid.Row="0" Margin="15 15" Value="0" TickFrequency="1" ValueChanged="Volume_OnValueChanged"/>
+                        <TextBlock Classes="Headline9" Grid.Column="1" Grid.Row="4" Name="czas">0:00</TextBlock>
+                        <TextBlock Classes="Headline9" Grid.ColumnSpan="2" Grid.Column="2" Grid.Row="4" Name="pozostalyCzas">Pozostaly Czas 0:00</TextBlock>
+                        <Button Name="back" Click="Back_OnClick" Margin="5" Grid.Column="1" Grid.Row="5">⏮</Button>
+                        <Button Name="play" Click="Play_OnClick" Margin="5" Grid.Column="2" Grid.Row="5">▶</Button>
+                        <Button Name="next" Click="Next_OnClick" Margin="5" Grid.Column="3" Grid.Row="5">⏭</Button>
+                        <Button Name="open" Click="Open_OnClick" Margin="5" Grid.Column="2" Grid.Row="6">Open</Button>
+                        <TextBox Grid.Column="0" Grid.ColumnSpan="5" Margin="9" Grid.Row="8" Name="mp3" Classes="Headline9"></TextBox>
+                        
+                </Grid>
+        </StackPanel>
+        
+</Window>
