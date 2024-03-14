@@ -4,7 +4,7 @@
   <value name="vscodeversion" type="string">1.87.2</value>
   <value name="extversion" type="string">1.4.29</value>
   <value name="VSExeVersion" type="string">4.1000.24.12402</value>
-  <value name="StillAlive" type="qword">133548889662708315</value>
+  <value name="StillAlive" type="qword">133548892662751062</value>
   <value name="CTime" type="qword">133548844640527890</value>
   <value name="ShutdownReason" type="int">3</value>
   <value name="PID" type="int">5887</value>
