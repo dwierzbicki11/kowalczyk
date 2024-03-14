@@ -1,33 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\janus\\Desktop\\Odtarzacz\\Odtarzacz\\Player\\Odtwarzacz\\Odtwarzacz.csproj": {}
+    "/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Odtwarzacz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\janus\\Desktop\\Odtarzacz\\Odtarzacz\\Player\\Odtwarzacz\\Odtwarzacz.csproj": {
+    "/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Odtwarzacz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\janus\\Desktop\\Odtarzacz\\Odtarzacz\\Player\\Odtwarzacz\\Odtwarzacz.csproj",
+        "projectUniqueName": "/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Odtwarzacz.csproj",
         "projectName": "Odtwarzacz",
-        "projectPath": "C:\\Users\\janus\\Desktop\\Odtarzacz\\Odtarzacz\\Player\\Odtwarzacz\\Odtwarzacz.csproj",
-        "packagesPath": "C:\\Users\\janus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\janus\\Desktop\\Odtarzacz\\Odtarzacz\\Player\\Odtwarzacz\\obj\\",
+        "projectPath": "/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Odtwarzacz.csproj",
+        "packagesPath": "/home/dwierzbicki/.nuget/packages/",
+        "outputPath": "/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\janus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/dwierzbicki/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\janus\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -119,7 +111,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

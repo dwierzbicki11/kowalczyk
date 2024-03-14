@@ -28,6 +28,7 @@ namespace Player
             Slider1.MaxWidth=300;
             timer.Elapsed+= Timer_Tick;
             playlist.Show();
+            playlist.LoadSongsFromDatabase();
             
 
         // Obrót slidera o 90 stopni
@@ -138,6 +139,7 @@ namespace Player
             mp3.Text = result[0];
             if (result != null)
             {
+                /*
                 try{
                     var db = new DBConnector();
                     db.Server = "10.0.2.3";
@@ -157,7 +159,37 @@ namespace Player
                 }
                 catch(Exception ex){
                     Debug.WriteLine("Error: "+ ex.Message);
-                }                
+                }     
+                */
+                try
+                {
+                    var db = new DBConnector();
+                    db.Server = "10.0.2.3";
+                    db.DatabaseName = "dwierzbicki";
+                    db.UserName = "dwierzbicki";
+                    db.Password = "Jui!#der7692@";
+
+                    if (db.IsConnect())
+                    {
+                        this.Title = "Połączono";
+
+                        if (db.InsertValues("songs", result[0], author2, title2))
+                        {
+                            this.Title = "Wykonano Polecenie";
+
+                            // Zakładając, że playlist jest dostępny tutaj, wywołaj metodę LoadSongsFromDatabase()
+                            playlist.LoadSongsFromDatabase();
+                        }
+                        else
+                        {
+                            this.Title = "Nie wykonano polecenia";
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("Błąd: " + ex.Message);
+                }           
             }
             
         }

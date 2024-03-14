@@ -27,6 +27,7 @@ namespace Player
                 playlista.Items.Add(item); // Add item to the ListBox
             }
         }
+        /*
         public void LoadSongsFromDatabase()
         {
             DBConnector dbConnector = DBConnector.Instance();
@@ -65,6 +66,51 @@ namespace Player
                 Console.WriteLine("Failed to connect to the database.");
             }
         }
+        */
+        public void LoadSongsFromDatabase()
+        {
+            DBConnector dbConnector = DBConnector.Instance();
+            dbConnector.Server = "10.0.2.3";
+            dbConnector.DatabaseName = "dwierzbicki";
+            dbConnector.UserName = "dwierzbicki";
+            dbConnector.Password = "Jui!#der7692@";
+
+            if (dbConnector.IsConnect())
+            {
+                try
+                {
+                    string query = "SELECT title FROM songs";
+                    MySqlCommand command = new MySqlCommand(query, dbConnector.Connection);
+                    MySqlDataReader reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        string title = reader.GetString("title");
+
+                        // Sprawdź, czy utwór nie istnieje już na liście
+                        if (!playlista.Items.Contains(title))
+                        {
+                            Add(title); // Dodaj każdy tytuł do listy odtwarzania
+                        }
+                    }
+
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Błąd podczas wczytywania utworów z bazy danych: " + ex.Message);
+                }
+                finally
+                {
+                    dbConnector.Close();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Nie udało się połączyć z bazą danych.");
+            }
+        }
+
 
     }
 }
