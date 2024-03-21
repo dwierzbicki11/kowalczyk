@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Odtwarzacz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+083334cf47d8c194d6b96f1c3565e550f7795e63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c852aaac223fdf3fa3deaa5b690d11ba2dcb2cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Odtwarzacz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Odtwarzacz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

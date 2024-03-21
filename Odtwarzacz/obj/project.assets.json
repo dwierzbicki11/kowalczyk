@@ -349,6 +349,22 @@
           }
         }
       },
+      "ConcurrencyVisualizer/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Permissions": "4.7.0"
+        },
+        "compile": {
+          "lib/.NETStandard20/Microsoft.ConcurrencyVisualizer.Markers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/.NETStandard20/Microsoft.ConcurrencyVisualizer.Markers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Google.Protobuf/3.25.1": {
         "type": "package",
         "compile": {
@@ -2480,6 +2496,20 @@
         "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
         "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
         "packageIcon.png"
+      ]
+    },
+    "ConcurrencyVisualizer/3.0.0": {
+      "sha512": "3pCe8zt7mLtBiFJbyNA6XeU6jT10l683WkPipaNj1ktjEXur3HSF8/w3P8dyeImxz+EFgNHrEzY+58Xqj1M8cA==",
+      "type": "package",
+      "path": "concurrencyvisualizer/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "concurrencyvisualizer.3.0.0.nupkg.sha512",
+        "concurrencyvisualizer.nuspec",
+        "lib/.NETStandard20/Microsoft.ConcurrencyVisualizer.Markers.dll",
+        "lib/.NETStandard20/Microsoft.ConcurrencyVisualizer.Markers.xml",
+        "lib/net45/Microsoft.ConcurrencyVisualizer.Markers.dll"
       ]
     },
     "Google.Protobuf/3.25.1": {
@@ -6093,6 +6123,7 @@
       "Avalonia.Diagnostics >= 11.0.5",
       "Avalonia.Fonts.Inter >= 11.0.5",
       "Avalonia.Themes.Fluent >= 11.0.5",
+      "ConcurrencyVisualizer >= 3.0.0",
       "LibVLCSharp.Avalonia >= 3.8.2",
       "Material.Avalonia >= 3.1.0.51-nightly",
       "MediaPlayer.Avalonia >= 2.0.0",
@@ -6160,6 +6191,10 @@
           "Avalonia.Themes.Fluent": {
             "target": "Package",
             "version": "[11.0.5, )"
+          },
+          "ConcurrencyVisualizer": {
+            "target": "Package",
+            "version": "[3.0.0, )"
           },
           "LibVLCSharp.Avalonia": {
             "target": "Package",

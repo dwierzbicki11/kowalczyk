@@ -88,6 +88,8 @@ namespace Player
                 if (!string.IsNullOrEmpty(mp3.Text))
                 {
                     await audio.Play(mp3.Text);
+                    //var win = new Vizualizarot();
+                    //win.Show();
                     play.Content = "||"; // Change button content to pause symbol
                     timer.Start();
                 }
@@ -246,13 +248,11 @@ namespace Player
             {
                 // Use the TagLib library to get metadata from the MP3 file
                 var file = await Task.Run(() => TagLib.File.Create(filePath));
-
                 // Check if the file has valid metadata and a cover image
-                if (file.Tag != null && file.Tag.Pictures != null && file.Tag.Pictures.Length > 0)
+                if (file?.Tag != null && file.Tag.Pictures != null && file.Tag.Pictures.Length > 0)
                 {
                     // Get the first cover image (assuming there might be multiple images)
                     var coverPicture = file.Tag.Pictures[0];
-
                     // Return the image data
                     return coverPicture.Data.Data;
                 }
@@ -269,6 +269,7 @@ namespace Player
                 return null;
             }
         }
+
 
         private async Task<string> GetMp3Author(string filePath)
         {

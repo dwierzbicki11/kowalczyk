@@ -25,3 +25,6 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Playlist.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Visualizator.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

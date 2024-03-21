@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[11.0.5, )"
             },
+            "ConcurrencyVisualizer": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "LibVLCSharp.Avalonia": {
               "target": "Package",
               "version": "[3.8.2, )"

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hLBDKzpN7xSDkR3zn4T7GJZ+7zx4HwjRVja/lhSiPirbtywfBbAl9S9Oqwo7pxN2PNPF5JQWk9Sw5Zny/UBd8A==",
+  "dgSpecHash": "7JmnnZvsqywb4zQyfSALDQNZ3HaHUbyGdLChcIR/q5dfY1ZKL7v/Oe4LlsmqWNjNw7VWDgGmIMLdUbH6+xxXkw==",
   "success": true,
   "projectFilePath": "/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Odtwarzacz.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "/home/dwierzbicki/.nuget/packages/avalonia.win32/11.0.5/avalonia.win32.11.0.5.nupkg.sha512",
     "/home/dwierzbicki/.nuget/packages/avalonia.x11/11.0.5/avalonia.x11.11.0.5.nupkg.sha512",
     "/home/dwierzbicki/.nuget/packages/bouncycastle.cryptography/2.2.1/bouncycastle.cryptography.2.2.1.nupkg.sha512",
+    "/home/dwierzbicki/.nuget/packages/concurrencyvisualizer/3.0.0/concurrencyvisualizer.3.0.0.nupkg.sha512",
     "/home/dwierzbicki/.nuget/packages/google.protobuf/3.25.1/google.protobuf.3.25.1.nupkg.sha512",
     "/home/dwierzbicki/.nuget/packages/harfbuzzsharp/2.8.2.3/harfbuzzsharp.2.8.2.3.nupkg.sha512",
     "/home/dwierzbicki/.nuget/packages/harfbuzzsharp.nativeassets.linux/2.8.2.3/harfbuzzsharp.nativeassets.linux.2.8.2.3.nupkg.sha512",

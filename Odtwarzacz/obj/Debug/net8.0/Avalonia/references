@@ -40,6 +40,7 @@
 /home/dwierzbicki/.nuget/packages/microsoft.codeanalysis.csharp.scripting/3.8.0/lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Scripting.dll
 /home/dwierzbicki/.nuget/packages/microsoft.codeanalysis.common/3.8.0/lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll
 /home/dwierzbicki/.nuget/packages/microsoft.codeanalysis.scripting.common/3.8.0/lib/netcoreapp3.1/Microsoft.CodeAnalysis.Scripting.dll
+/home/dwierzbicki/.nuget/packages/concurrencyvisualizer/3.0.0/lib/.NETStandard20/Microsoft.ConcurrencyVisualizer.Markers.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.1/ref/net8.0/Microsoft.CSharp.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.1/ref/net8.0/Microsoft.VisualBasic.Core.dll
 /usr/share/dotnet/packs/Microsoft.NETCore.App.Ref/8.0.1/ref/net8.0/Microsoft.VisualBasic.dll

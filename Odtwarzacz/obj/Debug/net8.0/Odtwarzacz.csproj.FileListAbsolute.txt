@@ -661,3 +661,4 @@ C:/Users/janus/Desktop/Odtarzacz/Odtarzacz/Player/Odtwarzacz/obj/Debug/net8.0/re
 /home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/obj/Debug/net8.0/Odtwarzacz.csproj.CopyComplete
 /home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/obj/Debug/net8.0/Odtwarzacz.genruntimeconfig.cache
 /home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/obj/Debug/net8.0/ref/Odtwarzacz.dll
+/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/bin/Debug/net8.0/Microsoft.ConcurrencyVisualizer.Markers.dll
