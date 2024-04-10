@@ -18,6 +18,7 @@
         <PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.5" />
         <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
         <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.5" />
+        <PackageReference Include="ConcurrencyVisualizer" Version="3.0.0" />
         <PackageReference Include="LibVLCSharp.Avalonia" Version="3.8.2" />
         <PackageReference Include="Material.Avalonia" Version="3.1.0.51-nightly" />
         <PackageReference Include="MediaPlayer.Avalonia" Version="2.0.0" />

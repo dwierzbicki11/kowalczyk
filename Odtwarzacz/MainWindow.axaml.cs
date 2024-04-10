@@ -28,6 +28,7 @@ namespace Player
             Slider1.MaxWidth=300;
             timer.Elapsed+= Timer_Tick;
             playlist.Show();
+            playlist.LoadSongsFromDatabase();
             
 
         // Obrót slidera o 90 stopni
@@ -87,6 +88,8 @@ namespace Player
                 if (!string.IsNullOrEmpty(mp3.Text))
                 {
                     await audio.Play(mp3.Text);
+                    //var win = new Vizualizarot();
+                    //win.Show();
                     play.Content = "||"; // Change button content to pause symbol
                     timer.Start();
                 }
@@ -138,6 +141,7 @@ namespace Player
             mp3.Text = result[0];
             if (result != null)
             {
+                /*
                 try{
                     var db = new DBConnector();
                     db.Server = "10.0.2.3";
@@ -154,7 +158,37 @@ namespace Player
                 }
                 catch(Exception ex){
                     Debug.WriteLine("Error: "+ ex.Message);
-                }                
+                }     
+                */
+                try
+                {
+                    var db = new DBConnector();
+                    db.Server = "10.0.2.3";
+                    db.DatabaseName = "dwierzbicki";
+                    db.UserName = "dwierzbicki";
+                    db.Password = "Jui!#der7692@";
+
+                    if (db.IsConnect())
+                    {
+                        this.Title = "Połączono";
+
+                        if (db.InsertValues("songs", result[0], author2, title2))
+                        {
+                            this.Title = "Wykonano Polecenie";
+
+                            // Zakładając, że playlist jest dostępny tutaj, wywołaj metodę LoadSongsFromDatabase()
+                            playlist.LoadSongsFromDatabase();
+                        }
+                        else
+                        {
+                            this.Title = "Nie wykonano polecenia";
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Debug.WriteLine("Błąd: " + ex.Message);
+                }           
             }
             
         }
@@ -211,13 +245,11 @@ namespace Player
             {
                 // Use the TagLib library to get metadata from the MP3 file
                 var file = await Task.Run(() => TagLib.File.Create(filePath));
-
                 // Check if the file has valid metadata and a cover image
-                if (file.Tag != null && file.Tag.Pictures != null && file.Tag.Pictures.Length > 0)
+                if (file?.Tag != null && file.Tag.Pictures != null && file.Tag.Pictures.Length > 0)
                 {
                     // Get the first cover image (assuming there might be multiple images)
                     var coverPicture = file.Tag.Pictures[0];
-
                     // Return the image data
                     return coverPicture.Data.Data;
                 }
@@ -234,6 +266,7 @@ namespace Player
                 return null;
             }
         }
+
 
         private async Task<string> GetMp3Author(string filePath)
         {
