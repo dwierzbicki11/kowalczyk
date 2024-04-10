@@ -150,9 +150,6 @@ namespace Player
                             this.Title = "Wykonano Polecenie";
                             playlist.LoadSongsFromDatabase();
                         }
-                        else{
-                            this.Title = "Nie wykonano polecenia";
-                        }
                     }
                 }
                 catch(Exception ex){
