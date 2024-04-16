@@ -1,25 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Odtwarzacz.csproj": {}
+    "C:\\Users\\janus\\Desktop\\player\\kowalczyk\\Odtwarzacz\\Odtwarzacz.csproj": {}
   },
   "projects": {
-    "/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Odtwarzacz.csproj": {
+    "C:\\Users\\janus\\Desktop\\player\\kowalczyk\\Odtwarzacz\\Odtwarzacz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Odtwarzacz.csproj",
+        "projectUniqueName": "C:\\Users\\janus\\Desktop\\player\\kowalczyk\\Odtwarzacz\\Odtwarzacz.csproj",
         "projectName": "Odtwarzacz",
-        "projectPath": "/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Odtwarzacz.csproj",
-        "packagesPath": "/home/dwierzbicki/.nuget/packages/",
-        "outputPath": "/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/obj/",
+        "projectPath": "C:\\Users\\janus\\Desktop\\player\\kowalczyk\\Odtwarzacz\\Odtwarzacz.csproj",
+        "packagesPath": "C:\\Users\\janus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\janus\\Desktop\\player\\kowalczyk\\Odtwarzacz\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/dwierzbicki/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\janus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\janus\\AppData\\Roaming\\Cosmos User Kit\\packages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,6 +40,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -115,7 +128,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

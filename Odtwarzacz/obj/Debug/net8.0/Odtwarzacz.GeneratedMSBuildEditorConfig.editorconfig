@@ -13,18 +13,18 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Player
-build_property.ProjectDir = /home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/
+build_property.ProjectDir = C:\Users\janus\Desktop\player\kowalczyk\Odtwarzacz\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/App.axaml]
+[C:/Users/janus/Desktop/player/kowalczyk/Odtwarzacz/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/MainWindow.axaml]
+[C:/Users/janus/Desktop/player/kowalczyk/Odtwarzacz/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Playlist.axaml]
+[C:/Users/janus/Desktop/player/kowalczyk/Odtwarzacz/Playlist.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/home/dwierzbicki/Pulpit/kowalczyk/Odtwarzacz/Visualizator.axaml]
+[C:/Users/janus/Desktop/player/kowalczyk/Odtwarzacz/Visualizator.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

@@ -8,14 +8,19 @@ using Avalonia.Threading;
 using System.Timers;
 using Avalonia.Media;
 using MySql.Data.MySqlClient;
+using NAudio.Wave;
 
 namespace Player
 {
     public partial class MainWindow : Window
     {
         private NetCoreAudio.Player audio = new NetCoreAudio.Player();
+
+        private WaveOutEvent waveOut;
+        private WaveStream audioStream;
         private bool isPlaying = false;
         string length;
+       
         Timer timer = new Timer(1000);
         DateTime startTime;
         Playlist playlist = new Playlist();
@@ -74,6 +79,11 @@ namespace Player
         }
         private async void Play_OnClick(object? sender, RoutedEventArgs e)
         {
+
+            
+
+                // Start playback
+                waveOut.Play();
             if (audio.Playing)
             {
                 audio.Stop().Wait();
@@ -83,11 +93,17 @@ namespace Player
             }
             else
             {
+                var canvas = new Vizualizator().FindControl<Canvas>("canvas");
+                await VisualizeAudio(canvas);
                 string selectedSongTitle = playlist.playlista.SelectedItem.ToString();
                 mp3.Text = GetFilePathFromDatabase(selectedSongTitle);
                 if (!string.IsNullOrEmpty(mp3.Text))
                 {
-                    await audio.Play(mp3.Text);
+                    waveOut = new WaveOutEvent();
+                    audioStream = new AudioFileReader(mp3.Text);
+                    waveOut.Init(audioStream);
+                    waveOut.Play();
+                    //await audio.Play(mp3.Text);
                     //var win = new Vizualizarot();
                     //win.Show();
                     play.Content = "||"; // Change button content to pause symbol
@@ -117,6 +133,7 @@ namespace Player
             }
 
         }
+        
         private void Volume_OnValueChanged(object? sender, RangeBaseValueChangedEventArgs e)
         {
             // Ustawienie głośności na podstawie wartości z Slider2
